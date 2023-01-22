@@ -51,8 +51,21 @@ const pinkPrice = .55
 
 // CODE HERE
 
+// let totalAcres = 0;
+
+// for(let i = 0; i < fujiAcres.length; i++){
+//     totalAcres = totalAcres + fujiAcres[i];
+// } 
+// for(let i = 0; i < galaAcres.length; i++){
+//     totalAcres = totalAcres + galaAcres[i];
+// } 
+// for(let i = 0; i < pinkAcres.length; i++){
+//     totalAcres = totalAcres + pinkAcres[i];
+// } 
+// // console.log(totalAcres)
 
 
+// Comments I created a for loop for each individual array that added each value of the index in the array and added them to the total of the var totalAcres. 
 
 
 // PROBLEM 2
@@ -69,6 +82,10 @@ const pinkPrice = .55
 
 // CODE HERE
 
+let averageDailyAcres = totalAcres / 7;
+    console.log(averageDailyAcres)
+
+// Comments I created a variable averageDailyAcres allowed my previous for loop code from question 1 run which gave me totalAcres = 63 I then divided by seven (days of the week).
 
 
 
@@ -107,6 +124,7 @@ let days = 0
 
 // CODE HERE
 
+while()
 
 
 // PROBLEM 4
