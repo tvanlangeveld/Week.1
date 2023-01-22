@@ -82,8 +82,8 @@ const pinkPrice = .55
 
 // CODE HERE
 
-let averageDailyAcres = totalAcres / 7;
-    console.log(averageDailyAcres)
+// let averageDailyAcres = totalAcres / 7;
+//     console.log(averageDailyAcres)
 
 // Comments I created a variable averageDailyAcres allowed my previous for loop code from question 1 run which gave me totalAcres = 63 I then divided by seven (days of the week).
 
@@ -124,8 +124,13 @@ let days = 0
 
 // CODE HERE
 
-while()
+// while (acresLeft >= 0){
+//     acresLeft = acresLeft - 9; 
+//     days = days + 1;
+// }
+// console.log(days)
 
+// Comment I created a while loop that subtracted 9 acres per day and added 1 day each loop to get us a total of 20 days to pick the remaining.
 
 // PROBLEM 4
 
@@ -153,14 +158,26 @@ while()
 
 // CODE HERE
 
-// let fujiTons =
-// let galaTons =
-// let pinkTons =
+let fujiTons = fujiAcres.slice(0, 7);
+let galaTons = galaAcres.slice(0, 7); 
+let pinkTons = pinkAcres.slice(0, 7);
 
 
+// for (let i = 0; i < fujiAcres.length; i++){
+// fujiTons[i] = fujiTons[i] * 6.5;
+// }
+// for (let i = 0; i < galaAcres.length; i++){
+// galaTons[i] = galaTons[i] * 6.5;
+// }
+// for (let i = 0; i < pinkAcres.length; i++){
+//  pinkTons[i] = pinkTons[i] * 6.5;
+//  }
+// console.log(fujiTons)
+// console.log(galaTons)
+// console.log(pinkTons)
 
 
-
+// Comments I spliced the info in to the new arrays from the ones listed above and used that info for a for loop that multiplied the totals by the average amount the tons picked per day.
 
 // PROBLEM 5
 
@@ -180,10 +197,24 @@ while()
 
 // CODE HERE 
 
-// let fujiPounds =
-// let galaPounds =
-// let pinkPounds =
+let fujiPounds = fujiTons.slice(0, 7);
+let galaPounds = galaTons.slice(0, 7);
+let pinkPounds = pinkTons.slice(0, 7);
 
+for(let i = 0; i < fujiTons.length; i++){
+    fujiPounds[i] = fujiPounds[i] * 2000; 
+}
+for(let i = 0; i < galaPounds.length; i++){
+    galaPounds[i] = galaPounds[i] * 2000;
+}
+for(let i = 0; i < pinkPounds.length; i++){
+    pinkPounds[i] = pinkPounds[i] * 2000;}
+
+// console.log(fujiPounds)
+// console.log(galaPounds)
+// console.log(pinkPounds)
+
+// Comment I sliced the info from the arrays above and then used for loops to get the total weight in pound adding them together.
 
 
 
@@ -207,14 +238,28 @@ while()
 
 // CODE HERE
 
-// let fujiProfit =
-// let galaProfit =
-// let pinkProfit =
+let fujiProfit = fujiPounds.slice(0, 7);
+let galaProfit = galaPounds.slice(0, 7);
+let pinkProfit = pinkPounds.slice(0, 7);
+
+for(let i = 0; i < fujiPounds.length; i++){
+    fujiProfit[i] = fujiProfit[i] * fujiPrice;
+}
+
+for(let i = 0; i < galaPounds.length; i++){
+    galaProfit[i] = galaProfit[i] * fujiPrice;
+}
+
+for(let i = 0; i < pinkProfit.length; i++){
+    pinkProfit[i] = pinkProfit[i] * fujiPrice;
+}
+
+// console.log(fujiProfit)
+// console.log(galaProfit)
+// console.log(pinkProfit)
 
 
-
-
-
+// comment I sliced the info from above and then used the var fuji price and multipied it by the values in the array.
 
 // PROBLEM 7
 
@@ -227,3 +272,16 @@ while()
 */
 
 // CODE HERE
+
+let totalProfit = 0
+
+for(let i = 0; i < 7; i++){
+    totalProfit = totalProfit + fujiProfit[i];
+}
+for(let i = 0; i < 7; i++){
+    totalProfit = totalProfit + pinkProfit[i];
+}
+for(let i = 0; i < 7; i++){
+    totalProfit = totalProfit + galaProfit[i];
+}
+console.log(totalProfit)
