@@ -28,8 +28,8 @@ const numbers = [1, 2, 3, 4, 5]
 
 //CODE HERE
 
-const middleNums = numbers.splice(1,3)
-console.log(middleNums)
+// const middleNums = numbers.splice(1,3)
+// console.log(middleNums)
 
 //////////////////PROBLEM 4////////////////////
 /* 
@@ -46,4 +46,11 @@ const bigOrSmallArray = [1, 99, 42, 69, 102, -10, 159, 352]
 // CODE HERE
 
 let answers = [];
-for (let i = 0; i < bigOrSmallArray; i++) 
+for (let i = 0; i < bigOrSmallArray.length; i++){
+if (bigOrSmallArray[i] > 100){
+answers.push(bigOrSmallArray[i]); 
+} 
+}
+console.log(answers)
+
+// I have no Idea how to do this
